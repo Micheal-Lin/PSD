@@ -1,0 +1,262 @@
+/*flex-coatiner-a*/
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/*最外圍包覆層*/
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+    margin-top: 1px;
+    /*border: 1px solid black;*/
+}
+
+/*titler*/
+.titler{
+    padding: 2px 0 30px 0;
+	background-color: #f6f6f6;
+}
+.titler ul{
+    float: right;/*使整個ul在畫面右測*/
+}
+.titler li{
+    float: left;/*使li在ul左側*/
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.titler li a{
+    text-decoration: none;/*去除連結底線*/
+}
+.fb{
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;/*使border線在中間*/
+}
+.fb span{
+    color: #2e3d79;
+    font-size: 14px;
+}
+.twitter span{
+    color: #00aaec;
+    font-size: 14px;
+}
+.fb span:hover{
+    font-size: 16px;
+}
+.twitter span:hover{
+    font-size: 16px;
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-pic{
+    background-image: url(img/logo.png);
+    width: 224px;
+    height: 50px;
+}
+.menu-pic a{
+    display: block;/*區塊元素*/
+    text-indent: 100%;/*使文字縮進100%*/
+    overflow: hidden;/*隱藏溢出文字*/
+    white-space: nowrap;/*隱藏下行溢出文字*/
+    font-size: 50px;
+}
+.menu ul{
+    float: right;/*使整個ul在畫面右測*/
+}
+.menu li{
+    float: left;/*使li在ul左側*/
+    padding-top: 20px;
+}
+.menu li a{
+    padding: 15px 10px;
+    color: #42d3a9;
+    text-decoration: none;
+    font-size: 16px;
+    transition: box-shadow 0.5s ease;/*指定 box-shadow 屬性會影響轉場動畫*/ 
+}
+.menu li a:hover{
+    font-weight: bold;
+    box-shadow: inset 0 -4px #42d3a9;
+}
+
+/*pic*/
+.pic{
+    background-image: url(img/banner.png);
+    background-size: cover;
+    width: 1024px;
+    height: 270px;
+    position: relative;
+}
+.inner{
+    width: 1024px;
+    height: 140px;
+    position: absolute;
+    background-color: rgb(60, 60, 60, 0.4);/*淡化背景顏色*/
+    top: 60px;
+}
+.inner h2{
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 15px;
+    line-height: 40px;/*行字間格距離*/
+}
+
+/*bodyer*/
+.bodyer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.bodyer li{
+    padding: 10px;
+    width: 305px;
+    border: 1px solid white;
+    border-radius: 10px;/*圓弧*/
+    border-left: 0.1px solid #f1f1f1;
+    border-right: 0.1px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+    box-shadow: 0 5px 10px -5px gainsboro;
+}
+.bodyer li:hover{
+    border: 2px solid white;
+    box-shadow: 0 5px 10px -5px aqua;/*x軸 y軸 擴散效果 顏色*/
+}
+.bodyer li img{
+    margin: auto;
+    display: block;
+}
+.bodyer li h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.bodyer li p{
+    line-height: 25px;
+    padding-bottom: 5px;
+}
+
+/*tabler*/
+.tabler{
+    width: 830px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.tabler h2{
+    text-align: center;/*文字置中*/
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+.tabler th,.tabler td{
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding: 8px 55px;/*上下 左右*/
+    font-family: sans-serif;
+}
+.tabler td:hover{
+    font-size: 18px;
+}
+.tabler th{
+    background: #f6f6f7;
+    text-align: left;
+    font-weight: bold;
+}
+.emphasis{
+    color: #58ba9c;
+}
+
+/*box*/
+.box{
+    background: linear-gradient(#00644b,#009872);
+    margin-top: 60px;
+}
+.box h2{
+    text-align: center;/*文字置中*/
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    line-height: 40px;
+    padding: 35px 0;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+.inputdata1 textarea{
+    width: 460px;/* cols="60" */
+}
+.inputdata1 textarea:hover{
+    background-color: aquamarine;
+    box-shadow: 0 5px 10px -5px aqua;
+}
+.inputdata2 label{
+    color: white;
+    font-weight: bold;
+}
+.inputdata2 input{
+    display: block;/*向下排列*/
+    margin: 5px 0 15px 0;
+    height: 35px;
+}
+.inputdata2 input:hover{
+    background-color: aquamarine;
+    box-shadow: 0 5px 10px -5px aqua;
+}
+.inputdata2 #submit{
+    float: right;
+    width: 70px;
+    height: 30px;
+    background: #00cc99;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    color: white;
+}
+.inputdata2 #submit:hover{
+    font-size: 18px;
+    box-shadow: 0 5px 10px -5px aqua;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.footer-pic{
+    background-image: url(img/footerlogo.png);
+    width: 171px;
+    height: 36px;
+}
+.footer-pic a{
+    display: block;/*區塊元素*/
+    text-indent: 100%;/*使文字縮進100%*/
+    overflow: hidden;/*隱藏溢出文字*/
+    white-space: nowrap;/*隱藏下行溢出文字*/
+    font-size: 50px;
+}
+.contact{
+    line-height: 20px;
+}
+.contact a{
+    text-decoration: none;
+    color: red;
+}
+.contact a:hover{
+    font-size: 18px;
+}
+
+/*position:fixed*/
+.moveup img{
+        width:40px;
+        height: 40px;
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        background-color: var(--bs-gray-100);
+}
